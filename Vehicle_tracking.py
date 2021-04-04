@@ -17,8 +17,8 @@ from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
 from PIL import Image
 
-flags.DEFINE_string('classes', './data/labels/classes.names', 'path to classes file')
-flags.DEFINE_string('weights', './weights/yolov3_custom.tf',
+flags.DEFINE_string('classes', 'classes.names', 'path to classes file')
+flags.DEFINE_string('weights', 'yolov3_custom.tf',
                     'path to weights file')
 flags.DEFINE_integer('size', 416, 'resize images to')
 flags.DEFINE_string('video', './data/video/20210325113656.mp4',
